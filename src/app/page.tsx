@@ -1,5 +1,7 @@
+import Hello from '../components/pages/home/Hello';
+
 export default function Home() {
   return (
-    <p>hello</p>
-  )
+    <Hello />
+  );
 }
