@@ -1,3 +1,4 @@
+import { Container } from '@/components/ui/container';
 import localFont from "next/font/local";
 import "./globals.css";
 import { metadata } from "./metadata";
@@ -24,7 +25,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Container>
+          {children}
+        </Container>
       </body>
     </html>
   );
